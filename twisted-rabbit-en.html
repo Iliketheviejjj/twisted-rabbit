@@ -139,6 +139,11 @@
   @keyframes blink{0%,95%{opacity:0}96%,99%{opacity:1}100%{opacity:0}}
   @keyframes duck{0%,54%,100%{transform:translateY(0)}58%,64%{transform:translateY(5px)}70%{transform:translateY(0)}}
 
+  .track{margin-top:26px}
+  .track .work-art{padding:0}
+  .track audio{width:100%;margin-top:6px;
+    filter:drop-shadow(0 4px 12px rgba(0,0,0,.4));accent-color:var(--gold)}
+  .track .work-body p.hint{font-size:13px;color:var(--dim);margin-top:10px;letter-spacing:.02em}
   .work-art--cover{padding:20px;
     background:radial-gradient(circle at 50% 40%, rgba(63,179,155,.16), transparent 65%), var(--jade)}
   .work-art--cover img{image-rendering:auto;
@@ -336,7 +341,7 @@
 
 
   <section id="obras" class="reveal">
-    <div class="sec-head"><span class="num">I</span><h2>Work</h2><span class="jump"><a href="#bob">Bob</a><a href="#palu">Palu</a></span></div>
+    <div class="sec-head"><span class="num">I</span><h2>Work</h2><span class="jump"><a href="#bob">Bob</a><a href="#palu">Palu</a><a href="#danza">Danza</a></span></div>
 
     <article class="work" id="bob">
       <div class="work-art work-art--cover">
@@ -373,6 +378,21 @@
           <span class="chip">Pixel art</span>
           <span class="chip">Character: Palu</span>
         </div>
+      </div>
+    </article>
+
+    <article class="work track" id="danza">
+      <div class="work-art">
+        <img src="danza.jpg" alt="A rabbit in a green suit dancing outside the Teatro Danza at sunset">
+        <span class="stamp">Music</span>
+      </div>
+      <div class="work-body">
+        <p class="eyebrow">From the world of Twisted Rabbit</p>
+        <h3>Teatro Danza</h3>
+        <p class="sub">Original piece · 4 min</p>
+        <p>One sunset, one green suit, and someone who couldn't help dancing before going in.</p>
+        <audio controls preload="none" src="danza.mp3"></audio>
+        <p class="hint">Turn it up.</p>
       </div>
     </article>
   </section>
